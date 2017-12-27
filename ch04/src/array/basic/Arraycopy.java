@@ -13,6 +13,7 @@ public class Arraycopy {
 			System.out.print(copyFrom[i] + " ");
 		System.out.println();
 		
+		// for-each 문
 		for (int value : copyTo)
 			System.out.print(value + " ");
 	}
