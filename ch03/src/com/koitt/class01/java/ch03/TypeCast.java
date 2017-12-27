@@ -4,20 +4,20 @@ public class TypeCast {
 	
 	public static void main(String[] args) {
 		
-		// 1. ¸í½ÃÀû Çüº¯È¯ 
-		byte b = (byte)128; // int -> byte·Î ¸í½ÃÀû Çüº¯È¯
+		// 1. ëª…ì‹œì  í˜•ë³€í™˜ 
+		byte b = (byte)128; // int -> byteë¡œ ëª…ì‹œì  í˜•ë³€í™˜
 		System.out.println(b);
 		
 		byte bt = (byte)-129;
-		System.out.format("%dÀÇ ÀÌÁø¼ö: %s %n", -129, Integer.toBinaryString(-129));
-		System.out.format("%dÀÇ ÀÌÁø¼ö: %s %n", bt, Integer.toBinaryString(bt));
+		System.out.format("%dì˜ ì´ì§„ìˆ˜: %s %n", -129, Integer.toBinaryString(-129));
+		System.out.format("%dì˜ ì´ì§„ìˆ˜: %s %n", bt, Integer.toBinaryString(bt));
 		
-		int n = (int)(5.0 / 4.0);	// ¸í½ÃÀû Çüº¯È¯ double -> int
+		int n = (int)(5.0 / 4.0);	// ëª…ì‹œì  í˜•ë³€í™˜ double -> int
 		System.out.println(n);
 		System.out.println(3 / 4);
-		System.out.println(3 / 4.0);	// ¹¬½ÃÀû Çüº¯È¯ int -> double (3)
+		System.out.println(3 / 4.0);	// ë¬µì‹œì  í˜•ë³€í™˜ int -> double (3)
 
-		double d = 3 + 4 * 2;		// ¹¬½ÃÀû Çüº¯È¯ int -> double (3 + 4 * 2)
+		double d = 3 + 4 * 2;		// ë¬µì‹œì  í˜•ë³€í™˜ int -> double (3 + 4 * 2)
 		System.out.println(d);
 	}
 }

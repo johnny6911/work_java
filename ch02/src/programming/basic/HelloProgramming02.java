@@ -1,13 +1,13 @@
 package programming.basic;
 
 public class HelloProgramming02 {
-	//static º¯¼ö´Â Àü¿ªº¯¼ö Å¬·¡½º ÀüÃ¼¿¡¼­ ½ÇÇàÀÌµÊ
+	//static ë³€ìˆ˜ëŠ” ì „ì—­ë³€ìˆ˜ í´ë˜ìŠ¤ ì „ì²´ì—ì„œ ì‹¤í–‰ì´ë¨
 	//(Global Variable)
-	static String hello = "¾È³çÇÏ¼¼¿©";
-	static String hello02 = "¾È³ç?";
+	static String hello = "ì•ˆë…•í•˜ì„¸ì—¬";
+	static String hello02 = "ì•ˆë…•?";
 	
 	public static void main(String[] args) {
-		//Áö¿ªº¯¼ö main¿¡¼­¸¸ ½ÇÇàÀÌµÊ
+		//ì§€ì—­ë³€ìˆ˜ mainì—ì„œë§Œ ì‹¤í–‰ì´ë¨
 		/*Local Variable
 		 dddd*/
 		String hello2 = "hello! guys";
@@ -15,8 +15,8 @@ public class HelloProgramming02 {
 		System.out.println(hello2);
 		chul09(hello2);
 	}
-	/* ºí·Ï  ÄÁÆ®·Ñ + ½¬ÇÁÆ® + ½½·¹½¬ È¤Àº ¿ª½½·¹½¬´Â
-	 * ÁÖ¼®À» ÁöÁ¤ È¤Àº ÇØÁ¦ ÇØÁÜ
+	/* ë¸”ë¡  ì»¨íŠ¸ë¡¤ + ì‰¬í”„íŠ¸ + ìŠ¬ë ˆì‰¬ í˜¹ì€ ì—­ìŠ¬ë ˆì‰¬ëŠ”
+	 * ì£¼ì„ì„ ì§€ì • í˜¹ì€ í•´ì œ í•´ì¤Œ
 	 */
 	static void chul09(String pika) {
 		System.out.println(pika);
@@ -25,9 +25,9 @@ public class HelloProgramming02 {
 	}
 }
 
-// JavaDoc Å¸ÀÔ ÁÖ¼®
+// JavaDoc íƒ€ì… ì£¼ì„
 /**
  * 
- *@³ª´Â ³ª´Ù
+ *@ë‚˜ëŠ” ë‚˜ë‹¤
  * @
  */

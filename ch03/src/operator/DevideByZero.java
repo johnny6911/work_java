@@ -6,24 +6,24 @@ public class DevideByZero {
 			
 			short data1 = 32766;
 			short data2 = 1;
-			//short data3 = data1 + data2; 			// ´õÇÑ °á°ú°¡ intÇüÀ¸·Î º¯È¯
-			short data3 = (short)(data1 + data2);	//¸í½ÃÀû Çüº¯È¯ int -> short
+			//short data3 = data1 + data2; 			// ë”í•œ ê²°ê³¼ê°€ intí˜•ìœ¼ë¡œ ë³€í™˜
+			short data3 = (short)(data1 + data2);	//ëª…ì‹œì  í˜•ë³€í™˜ int -> short
 			short data4 = 32766 + 1;
 			System.out.println(data3 + " " + data4);
 			
-			System.out.println(0.0 /0.0); 	//NaN (not a number ¼ıÀÚ°¡ ¾Æ´Ï´Ù)
-			System.out.println(3 / 0.0);	//Infinity (¹«ÇÑ´ë : 3ÀÌ doubleÇüÀ¸·Î º¯È¯)
-			System.out.println(3 / 0);		//¿¹¿Ü¹ß»ı (Á¤¼ö¸¦ 0À¸·Î ³ª´­ ¼ö ¾ø±â ¶§¹®¿¡ ¿¹¿Ü¹ß»ı)
+			System.out.println(0.0 /0.0); 	//NaN (not a number ìˆ«ìê°€ ì•„ë‹ˆë‹¤)
+			System.out.println(3 / 0.0);	//Infinity (ë¬´í•œëŒ€ : 3ì´ doubleí˜•ìœ¼ë¡œ ë³€í™˜)
+			System.out.println(3 / 0);		//ì˜ˆì™¸ë°œìƒ (ì •ìˆ˜ë¥¼ 0ìœ¼ë¡œ ë‚˜ëˆŒ ìˆ˜ ì—†ê¸° ë•Œë¬¸ì— ì˜ˆì™¸ë°œìƒ)
 			
-			String money = "NaN";			//ÀÔ±İ
+			String money = "NaN";			//ì…ê¸ˆ
 			double moneyDouble = Double.parseDouble(money);
 			if (Double.isNaN(moneyDouble)) {
-				double balance = 30000;		//ÀÜ°í ¹¬½ÃÀû Çüº¯È¯
+				double balance = 30000;		//ì”ê³  ë¬µì‹œì  í˜•ë³€í™˜
 				balance = balance + moneyDouble;
 				System.out.println(balance);
 			}
 			else {
-				System.out.println("±İ¾×À» ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä");
+				System.out.println("ê¸ˆì•¡ì„ ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”");
 			}
 					
 		}

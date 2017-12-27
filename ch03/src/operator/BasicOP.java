@@ -7,12 +7,12 @@ public class BasicOP {
 		day = remainder = 365;
 		int week = 365 / 7;
 		
-		System.out.format("1³âÀº %dÀÏÀÌ¸ç %dÁÖÀÌ´Ù.%n", day, week);
+		System.out.format("1ë…„ì€ %dì¼ì´ë©° %dì£¼ì´ë‹¤.%n", day, week);
 		
-		// remainder = remainder % 7; ¹ØÀÇ remainder %= 7°ú °°À½
+		// remainder = remainder % 7; ë°‘ì˜ remainder %= 7ê³¼ ê°™ìŒ
 		System.out.println(remainder %= 7);
-		//remainder¿¡ ÀúÀåµÇ´Â °ªÀÌ °á°ú °ª
-		System.out.println(remainder); // À§ °á°ú¿Í ÀÏÄ¡
+		//remainderì— ì €ì¥ë˜ëŠ” ê°’ì´ ê²°ê³¼ ê°’
+		System.out.println(remainder); // ìœ„ ê²°ê³¼ì™€ ì¼ì¹˜
 	}
 
 }

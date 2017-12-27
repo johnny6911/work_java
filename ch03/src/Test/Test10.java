@@ -6,10 +6,10 @@ public class test10 {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		System.out.println("±İ¾×À» ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ê¸ˆì•¡ì„ ì…ë ¥í•˜ì„¸ìš”");
 		int money = input.nextInt();
 		
-		/* ¹æ¹ı 1
+		/* ë°©ë²• 1
 		int fiveman = money / 50000;
 		System.out.println(fiveman);
 		money = money - fiveman * 50000;
@@ -30,7 +30,7 @@ public class test10 {
 		int man = money % 50000 / 10000;
 		int fiveChun = money % 10000 / 5000;
 		int chun = money % 5000 / 1000;
-		System.out.printf("5¸¸¿ø±Ç %d°³%n1¸¸¿ø±Ç %d°³%n5Ãµ¿ø±Ç %d°³%n1Ãµ¿ø±Ç %d%n",fiveMan,man,fiveChun,chun);
+		System.out.printf("5ë§Œì›ê¶Œ %dê°œ%n1ë§Œì›ê¶Œ %dê°œ%n5ì²œì›ê¶Œ %dê°œ%n1ì²œì›ê¶Œ %d%n",fiveMan,man,fiveChun,chun);
 		
 		input.close();
 	}

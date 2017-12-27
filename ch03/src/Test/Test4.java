@@ -7,11 +7,11 @@ public class Test4 {
 	public static void main(String[] args) {
 		
 		Scanner input = new Scanner(System.in);
-		System.out.println("¹®ÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ë¬¸ìžë¥¼ ìž…ë ¥í•˜ì„¸ìš”");
 		String inputString = input.next();
 		char unit = inputString.charAt(0);
 		
-		System.out.println("¿Âµµ¸¦ ÀÔ·ÂÇÏ¼¼¿ä >>");
+		System.out.println("ì˜¨ë„ë¥¼ ìž…ë ¥í•˜ì„¸ìš” >>");
 		double degree = input.nextDouble();
 		
 		double result = 0.0;
@@ -19,13 +19,13 @@ public class Test4 {
 			case 'F':
 			case 'f':
 				result = (5.0 / 9.0) * (degree - 32);
-				System.out.format("¼·¾¾ %.2f n%", result);
+				System.out.format("ì„­ì”¨ %.2f n%", result);
 				break;
 				
 			case 'C':
 			case 'c':
 				result= (9.0 / 5.0) * degree + 32;
-				System.out.format("È­¾¾ %.2f n%", result);
+				System.out.format("í™”ì”¨ %.2f n%", result);
 				break; 
 		}
 		

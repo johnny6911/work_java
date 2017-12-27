@@ -7,20 +7,20 @@ public class Test5 {
 	public static void main(String[] args) {
 		
 		Scanner input = new Scanner(System.in);
-		System.out.println("³âµµÀÔ·Â : ");
+		System.out.println("ë…„ë„ì…ë ¥ : ");
 		int y = input.nextInt();
 		
 		boolean cond01 = y % 4 == 0;
 		boolean cond02 = y % 100 !=0;
 		boolean cond03 = y % 400 == 0;
-		//&& µÑ´Ù ¸¸Á·ÇØ¾ßÇÔ     ³ª´« ³ª¸ÓÁö°¡ 0ÀÌ ¾Æ´Ò°æ¿ì    µÑÁß ÇÏ³ª¸¸ ¸¸Á·ÇÒ°æ¿ì
+		//&& ë‘˜ë‹¤ ë§Œì¡±í•´ì•¼í•¨     ë‚˜ëˆˆ ë‚˜ë¨¸ì§€ê°€ 0ì´ ì•„ë‹ê²½ìš°    ë‘˜ì¤‘ í•˜ë‚˜ë§Œ ë§Œì¡±í• ê²½ìš°
 		//((y % 4 == 0) && (y % 100 !=0) || (y % 400 == 0))
 		
 		if (cond01 && cond02 || cond03) {
-			System.out.println("À±³âÀÓ");
+			System.out.println("ìœ¤ë…„ì„");
 		}
 		else {
-			System.out.println("Æò³âÀÓ");
+			System.out.println("í‰ë…„ì„");
 		}
 		
 			

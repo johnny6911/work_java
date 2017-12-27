@@ -7,16 +7,16 @@ public class Test2 {
 	public static void main(String[] args) {
 		
 		Scanner input = new Scanner(System.in);
-		System.out.println("½Ç¼ö¸¦ ÀÔ·ÂÇÏ¼À : ");
+		System.out.println("ì‹¤ìˆ˜ë¥¼ ì…ë ¥í•˜ì…ˆ : ");
 		int a = (int)input.nextInt();
 		int b = (int)input.nextInt();
 		
 		/*
-		 * a¿Í bÀÇ ÇÕÀº  intÇüÀÌ°í
-		 * double sum º¯¼ö¿¡ Áı¾î³ÖÀ» ¶§ ÀÚµ¿À¸·Î double ÇüÀ¸·Î º¯°æµÈ´Ù
+		 * aì™€ bì˜ í•©ì€  intí˜•ì´ê³ 
+		 * double sum ë³€ìˆ˜ì— ì§‘ì–´ë„£ì„ ë•Œ ìë™ìœ¼ë¡œ double í˜•ìœ¼ë¡œ ë³€ê²½ëœë‹¤
 		 * 
-		 * sumÀº intÇü ¸¦ ³ª´³±â ¶§¹®¿¡ °á°ú´Â doubleÇüÀÌ°í
-		 * ¸¶Âù°¡Áö·Î double avgº¯¼ö¿¡ Áı¾î ³Ö¾ú±â ¶§¹®¿¡ ÀÚµ¿À¸·Î doubleÇüÀ¸·Î º¯°æµÈ´Ù
+		 * sumì€ intí˜• ë¥¼ ë‚˜ëˆ´ê¸° ë•Œë¬¸ì— ê²°ê³¼ëŠ” doubleí˜•ì´ê³ 
+		 * ë§ˆì°¬ê°€ì§€ë¡œ double avgë³€ìˆ˜ì— ì§‘ì–´ ë„£ì—ˆê¸° ë•Œë¬¸ì— ìë™ìœ¼ë¡œ doubleí˜•ìœ¼ë¡œ ë³€ê²½ëœë‹¤
 		 */
 		
 		double c = a + b;
@@ -24,7 +24,7 @@ public class Test2 {
 		
 		
 		
-		System.out.printf("ÇÕ: %.2f, Æò±Õ: %.2f %n", c, d);
+		System.out.printf("í•©: %.2f, í‰ê· : %.2f %n", c, d);
 		
 	}
 	

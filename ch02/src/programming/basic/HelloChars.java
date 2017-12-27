@@ -2,17 +2,17 @@ package programming.basic;
 
 public class HelloChars {
 	public static void main(String[] args) {
-		System.out.println('a');		//char(Ä³¸¯ÅÍ) Çü
-		System.out.println('\\');		// \ Ãâ·Â
+		System.out.println('a');		//char(ìºë¦­í„°) í˜•
+		System.out.println('\\');		// \ ì¶œë ¥
 		
-		// 8Áø¼ö 142ÀÇ ASCII ÄÚµå °ª(10Áø¼ö - 98ÀÇ ASCII ÄÚµå °ª)
+		// 8ì§„ìˆ˜ 142ì˜ ASCII ì½”ë“œ ê°’(10ì§„ìˆ˜ - 98ì˜ ASCII ì½”ë“œ ê°’)
 		System.out.println('\142');		
 		
-		System.out.println('\uAC00');	// UTF-8 = unicode °ª AC00 : °¡.  AC´Â 16Áø¼öÀÓ
-		System.out.println('\uAC01');	// Unicode °ª AC01 : °¢
-		System.out.println('°­');
+		System.out.println('\uAC00');	// UTF-8 = unicode ê°’ AC00 : ê°€.  ACëŠ” 16ì§„ìˆ˜ì„
+		System.out.println('\uAC01');	// Unicode ê°’ AC01 : ê°
+		System.out.println('ê°•');
 		
-		System.out.print("Hello\nWorld\tHi\b\rABC\r\n"); // \n(¿£´õ) °ú \t
+		System.out.print("Hello\nWorld\tHi\b\rABC\r\n"); // \n(ì—”ë”) ê³¼ \t
 		System.out.println("\'");
 	}
 }

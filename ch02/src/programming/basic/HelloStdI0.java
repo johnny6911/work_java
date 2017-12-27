@@ -5,10 +5,10 @@ public class HelloStdI0 {
 	public static void main(String[] args) {
 		
 		java.util.Scanner input = new java.util.Scanner(System.in);
-		System.out.println("Á¤¼ö¿Í ½Ç¼ö¸¦ °¢°¢ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì •ìˆ˜ì™€ ì‹¤ìˆ˜ë¥¼ ê°ê° ì…ë ¥í•˜ì„¸ìš”");
 		int i = input.nextInt();
 		double d = input.nextDouble();
 		System.out.println("i = " + i + ", d = " + d);
-		System.err.println("¿¡·¯´Â ¾ø½À´Ï´Ù.");
+		System.err.println("ì—ëŸ¬ëŠ” ì—†ìŠµë‹ˆë‹¤.");
 	}
 }

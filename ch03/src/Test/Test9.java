@@ -12,10 +12,10 @@ public class Test9 {
 		double weight = input.nextDouble();
 		
 		if (weight <= ((height - 100) * 0.9)) {
-			System.out.println("Á¤»óÀÔ´Ï´Ù");
+			System.out.println("ì •ìƒìž…ë‹ˆë‹¤");
 		}
 		else {
-			System.out.println("ºñ¸¸ ÀÔ´Ï´Ù");
+			System.out.println("ë¹„ë§Œ ìž…ë‹ˆë‹¤");
 		}
 		
 		

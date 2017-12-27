@@ -8,13 +8,13 @@ public class PersonInfo {
 	static double height;
 	
 		public static void main(String[] args) {
-			System.out.print("Å°³ª ¸ö¹«°Ô ¤¡¤¡");
+			System.out.print("í‚¤ë‚˜ ëª¸ë¬´ê²Œ ã„±ã„±");
 			
 			Scanner x = new Scanner(System.in);
 			
 				weight = x.nextInt();
 				height = x.nextDouble();
-				System.out.printf("¸ö¹«°Ô: %dkg, Å°: %.1fcm", weight, height);
+				System.out.printf("ëª¸ë¬´ê²Œ: %dkg, í‚¤: %.1fcm", weight, height);
 				
 				x.close();
 		}

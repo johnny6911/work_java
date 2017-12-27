@@ -2,17 +2,17 @@ package programming.basic;
 
 public class HelloLiterals {
 
-		static long creditCardNumber = 1234567890123456L;	// _´Â Java 7ºÎÅÍ Àû¿ëµÊ
+		static long creditCardNumber = 1234567890123456L;	// _ëŠ” Java 7ë¶€í„° ì ìš©ë¨
 		static long socialSecurityNumber = 999_99_9999L;
 		static float pi = 3.14_15F;
 		
 		public static void main(String[] args) {
 			
-			System.out.println(0b1010); //ÀÌÁø¼ö
-			System.out.println(016);	//8Áø¼ö
-			System.out.println(0x1F);	//16Áø¼ö
-			System.out.println(3.14f);	//float Çü
-			System.out.println(3.1415D);//double Çü
+			System.out.println(0b1010); //ì´ì§„ìˆ˜
+			System.out.println(016);	//8ì§„ìˆ˜
+			System.out.println(0x1F);	//16ì§„ìˆ˜
+			System.out.println(3.14f);	//float í˜•
+			System.out.println(3.1415D);//double í˜•
 			System.out.println(creditCardNumber);
 			System.out.println(socialSecurityNumber);
 			System.out.println(pi);

@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class RelationalIOP {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		System.out.println("µÎ Á¤¼ö¸¦ ÀÔ·Â >>");
+		System.out.println("ë‘ ì •ìˆ˜ë¥¼ ìž…ë ¥ >>");
 		int x = input.nextInt();
 		int y = input.nextInt();
 		System.out.format("%d > %d -> %b %n", x , y, x>y);
@@ -14,7 +14,7 @@ public class RelationalIOP {
 		System.out.format("%d <= %d -> %b %n", x , y, x<=y);
 		System.out.format("%d == %d -> %b %n", x , y, x==y);
 		
-		//!´Â °°Áö ¾Ê´Ù¸¦ Ç¥ÇöÇÔ
+		//!ëŠ” ê°™ì§€ ì•Šë‹¤ë¥¼ í‘œí˜„í•¨
 		System.out.format("%d != %d -> %b %n", x , y, x!=y);
 		
 		input.close();

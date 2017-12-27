@@ -8,14 +8,14 @@ public class Test1 {
 		
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println("½Ç¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.println("ì‹¤ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		double a = input.nextDouble();
 		double b = input.nextDouble();
 		
 		double result = a + b;
 		double result2 = result / 2;
 		
-		System.out.printf("ÇÕ: %.2f, Æò±Õ: %.2f %n", result,result2);
+		System.out.printf("í•©: %.2f, í‰ê· : %.2f %n", result,result2);
 		
 		input.close();
 		

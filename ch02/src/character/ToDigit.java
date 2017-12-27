@@ -7,7 +7,7 @@ public class ToDigit {
 	
 		Scanner x = new Scanner(System.in);
 		int s = x.nextInt();
-		//$´Â ÀÚ¸®¸¦ Ç¥½ÃÇÔ  ex) 1$´Â ÇÏ³ª¸¦ Ç¥½Ã
+		//$ëŠ” ìë¦¬ë¥¼ í‘œì‹œí•¨  ex) 1$ëŠ” í•˜ë‚˜ë¥¼ í‘œì‹œ
 			System.out.printf("%1$o%n%1$d%n%1$h%n", s);
 			
 		x.close();

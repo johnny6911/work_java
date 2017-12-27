@@ -7,13 +7,13 @@ public class HelloSimplePrintf {
 		double height = 175.8;
 		
 		/*
-		 * %d: 10Áø¼ö
-		 * %f: float °ª
-		 * %s: String °ª
-		 * %c: char °ª
+		 * %d: 10ì§„ìˆ˜
+		 * %f: float ê°’
+		 * %s: String ê°’
+		 * %c: char ê°’
 		 */
 		/* escape sequence */
-		System.out.printf("³ªÀÌ: %d, ¸ö¹«°Ô: %d, Å°:%f, \n", age, weight, height);
-		System.out.printf("%s: %c Çü", " Ç÷¾×Çü",'O');
+		System.out.printf("ë‚˜ì´: %d, ëª¸ë¬´ê²Œ: %d, í‚¤:%f, \n", age, weight, height);
+		System.out.printf("%s: %c í˜•", " í˜ˆì•¡í˜•",'O');
 	}
 }

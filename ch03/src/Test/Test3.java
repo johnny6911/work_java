@@ -7,11 +7,11 @@ public class Test3 {
 	public static void main(String[] args) {
 		
 		Scanner input = new Scanner(System.in);
-		System.out.println("Å³·Î±×·¥À» ÀÔ·ÂÇÏ½Ã¿À : ");
+		System.out.println("í‚¬ë¡œê·¸ë¨ì„ ì…ë ¥í•˜ì‹œì˜¤ : ");
 		double kg = input.nextInt();
 		double k = kg * 1000000 / 453592;
 		
-		System.out.printf("ÆÄ¿îµå(pound): %.3f", k);
+		System.out.printf("íŒŒìš´ë“œ(pound): %.3f", k);
 		
 		input.close();
 		

@@ -7,7 +7,7 @@ public class Test6 {
 	public static void main(String[] args) {
 		
 		Scanner input = new Scanner(System.in);
-		System.out.println("Á¤¼ö ÀÔ·ÂÇÏ¼À : ");
+		System.out.println("ì •ìˆ˜ ìž…ë ¥í•˜ì…ˆ : ");
 		
 		int num = input.nextInt();
 		
@@ -26,7 +26,7 @@ public class Test6 {
 		int one = num % 10 / 1;
 		System.out.println(one);
 		
-		System.out.printf("%d¸¸ %dÃµ %d¹é %d½Ê %dÀÔ´Ï´Ù %n", tenthu,chun,hun,ten,one);
+		System.out.printf("%dë§Œ %dì²œ %dë°± %dì‹­ %dìž…ë‹ˆë‹¤ %n", tenthu,chun,hun,ten,one);
 		
 	}
 }

@@ -9,7 +9,7 @@ public class LogicalOP {
 		System.out.format("%5b || %5b | %b %n",false, true, false || true);
 		System.out.format("%5b || %5b | %b %n",false, false, false || false);
 		
-		//! ºÎÁ¤Àº ¹İ´ë·Î
+		//! ë¶€ì •ì€ ë°˜ëŒ€ë¡œ
 		System.out.format("!%5b | %b %n", true, !true);
 		System.out.format("!%5b | %b %n",false, !false);
 	}

@@ -6,25 +6,25 @@ public class NestedIf {
 	public static void main(String[] args) {
 	
 		Scanner in = new Scanner(System.in);
-		System.out.print("¸éÇã½ÃÇè Á¾·ù¼±ÅÃ (1Á¾ ¶Ç´Â 2Á¾ ÀÔ·Â >>");
+		System.out.print("ë©´í—ˆì‹œí—˜ ì¢…ë¥˜ì„ íƒ (1ì¢… ë˜ëŠ” 2ì¢… ìž…ë ¥ >>");
 		int type = in.nextInt();
-		System.out.print("ÇÊ±â ¸éÇã½ÃÇè Á¡¼ö ÀÔ·Â >>");
+		System.out.print("í•„ê¸° ë©´í—ˆì‹œí—˜ ì ìˆ˜ ìž…ë ¥ >>");
 		int score = in.nextInt();
 		
 		if (type ==1) {
 			if (score >= 70) {
-				System.out.println("1Á¾ ¸éÇã ½ÃÇè ÇÕ°Ý");
+				System.out.println("1ì¢… ë©´í—ˆ ì‹œí—˜ í•©ê²©");
 			}
 			else {
-				System.out.println("1Á¾ ¸éÇã ½ÃÇè ºÒÇÕ°Ý");
+				System.out.println("1ì¢… ë©´í—ˆ ì‹œí—˜ ë¶ˆí•©ê²©");
 			}
 		} 
 		else if (type == 2) {
 			if (score >= 60) {
-				System.out.println("2Á¾ ¸éÇã ½ÃÇè ÇÕ°Ý");
+				System.out.println("2ì¢… ë©´í—ˆ ì‹œí—˜ í•©ê²©");
 			}
 			else {
-				System.out.println("2Á¾ ¸éÇã ½ÃÇè ºÒÇÕ°Ý");
+				System.out.println("2ì¢… ë©´í—ˆ ì‹œí—˜ ë¶ˆí•©ê²©");
 			}	
 		}
 		

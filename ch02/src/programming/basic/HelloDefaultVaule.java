@@ -2,18 +2,18 @@ package programming.basic;
 
 public class HelloDefaultVaule {
 
-	//ÇÊµå ¼±¾ð
+	//í•„ë“œ ì„ ì–¸
 	static int def;
 	static boolean bool;
 	static String name;
 	
 	public static void main(String[] args) {
 		
-		//Áö¿ªº¯¼ö ¼±¾ð
+		//ì§€ì—­ë³€ìˆ˜ ì„ ì–¸
 		int n = 100;
 		System.out.println(n);
 		
-		//ÇÊµå »ç¿ë °¡´É
+		//í•„ë“œ ì‚¬ìš© ê°€ëŠ¥
 		System.out.println(def);
 		System.out.println(bool);
 		System.out.println(name);

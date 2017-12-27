@@ -7,34 +7,34 @@ public class Test7 {
 	public static void main(String[] args) {
 		
 		Scanner input = new Scanner(System.in);
-		System.out.println("³âÀÇ ¿ù(month)¸¦ ÀÔ·Â: ");
+		System.out.println("ë…„ì˜ ì›”(month)ë¥¼ ì…ë ¥: ");
 		int month = input.nextInt();
 		
 		/*switch (month) {
 			case 1:
 			case 2:
 			case 3: case 4: case 5: case 6:
-			System.out.printf("%d¿ùÀº »ó¹İ±âÀÔ´Ï´Ù. \n", month);
+			System.out.printf("%dì›”ì€ ìƒë°˜ê¸°ì…ë‹ˆë‹¤. \n", month);
 			break;
 			case 7: case 8: case 9: case 10: case 11: case 12:
-			System.out.printf("%d¿ùÀº ÇÏ¹İ±âÀÔ´Ï´Ù. \n", month);
+			System.out.printf("%dì›”ì€ í•˜ë°˜ê¸°ì…ë‹ˆë‹¤. \n", month);
 			break;
 			
 			default:
-				System.err.printf("¿ù(month)¸¦ Àß¸ø ÀÔ·ÂÇß½À´Ï´Ù. \n");
+				System.err.printf("ì›”(month)ë¥¼ ì˜ëª» ì…ë ¥í–ˆìŠµë‹ˆë‹¤. \n");
 		}
 		*/
 		/*
 		if (month > 0 && month <= 6) {
-			System.out.println("»ó¹İ±âÀÓ");
+			System.out.println("ìƒë°˜ê¸°ì„");
 		}
 		else if (month >= 7 && month <= 12) {
-			System.out.println("ÇÏ¹İ±âÀÓ");
+			System.out.println("í•˜ë°˜ê¸°ì„");
 		}
 		*/
 		
-		//		month 6º¸´Ù Å©¸é ÇÏ¹İ±â 6º¸´Ù °°°Å³ª ÀÛÀ¸¸é »ó¹İ±â
-		String result = month > 6 ? "ÇÏ¹İ±âÀÔ´Ï´Ù" : "»ó¹İ±âÀÔ´Ï´Ù";
+		//		month 6ë³´ë‹¤ í¬ë©´ í•˜ë°˜ê¸° 6ë³´ë‹¤ ê°™ê±°ë‚˜ ì‘ìœ¼ë©´ ìƒë°˜ê¸°
+		String result = month > 6 ? "í•˜ë°˜ê¸°ì…ë‹ˆë‹¤" : "ìƒë°˜ê¸°ì…ë‹ˆë‹¤";
 		
 		System.out.println(result);
 		

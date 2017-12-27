@@ -6,11 +6,11 @@ public class Scoreifelse {
 		int score = 65;
 		
 		if (60 <= score) {
-			System.out.println("ÇÕ°ÝÀÔ´Ï´Ù");			
+			System.out.println("í•©ê²©ìž…ë‹ˆë‹¤");			
 		} 
 		
 		else {
-			System.out.println("ºÒÇÕ°ÝÀÔ´Ï´Ù");
+			System.out.println("ë¶ˆí•©ê²©ìž…ë‹ˆë‹¤");
 		}
 	}
 }
