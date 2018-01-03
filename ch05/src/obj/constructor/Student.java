@@ -1,4 +1,4 @@
-package obj.contructor;
+package obj.constructor;
 
 public class Student /*extends Object*/{
 
