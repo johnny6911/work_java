@@ -4,7 +4,7 @@ public class Motor extends Vehicle{
 	private String name = "자동차";	// 이름
 	private int displacement;		// 배기량
 	
-	// Motor의 기본 생성자
+	// Motor의 기본 생성자 (항상 만드는게 좋다)
 	public Motor() {
 		/*
 		 * 부모가 존재해야 자식이 존재할 수 있기 때문에
