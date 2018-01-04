@@ -2,7 +2,7 @@ package test;
 
 public class Test4 {
 	
-	private int salary = 100000;
+	private int salary = 1000000;
 	
 	public Test4() {
 		
@@ -27,5 +27,6 @@ public class Test4 {
 		
 		System.out.println(b.getAnnualGross());
 		System.out.println(a.getAnnualGross());
+		
 	}
 }

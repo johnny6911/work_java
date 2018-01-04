@@ -15,7 +15,7 @@ public class TestDrive {
 		
 		//자동차 배열을 생성한다.
 		Car[] car3 = new Car[3];
-		car3[0] = new Car("k3", 180); //자동차 배열들에 차를 집어 넣는다
+		car3[0] = new Car("k3", 180);
 		car3[1] = new Car("k5", 185);
 		car3[2] = new Car("qm6", 180);
 		//k5.setMaxSpeed(170);
