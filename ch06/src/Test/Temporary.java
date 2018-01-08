@@ -19,8 +19,7 @@ public class Temporary extends Regular{
 	}
 	
 	public void printInfo() {
-		System.out.print(" ");
-		System.out.println();
+		System.out.print("비정규직: " + this.hourOfWorks + " / " + Salary());
 	}
 	
 	public void printRegularInfo() {
