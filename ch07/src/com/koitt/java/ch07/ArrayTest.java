@@ -9,12 +9,12 @@ public class ArrayTest {
 	public ArrayTest(int size) { // int size 해당 생성자 안에서만 사용이 가능한 변수(필드)
 		this.length = size;
 		this.array = new Integer[this.length];
-		Integer [] a = new Integer[3];
+		//Integer [] a = new Integer[this.length]; // 인티져형 배열을 선언해서 초기화해줌
 	}
 	
 	// 자료구조에 데이터를 추가 (index 번호에다가 해당 데이터를 저장)
 	public void add(int index, int value) {
-		if (index >= 0 && index < this.length) {
+		if ((index >= 0) && (index < this.length) ) {
 			if (this.array[index] == null) {
 				this.array[index] = value;
 			}
@@ -23,7 +23,7 @@ public class ArrayTest {
 				if (this.array.length < newSize) {
 					// 깊은복사(Deep copy): 기존 데이터를 손상없이 보존하기 위해서 임시로 다른 배열에 값을 복사
 					Integer[] tempArray = new Integer[this.length];
-					System.arraycopy(this.array, 0, tempArray, 0, this.array.length);
+					System.arraycopy(this.array, 0, tempArray, 0, this.array.length); // 기존에 만든 array배열의 0번째 숫자를 0번째부터 기존 배열길이만큼 복사한다
 					
 					// 
 					this.length *= 2;
@@ -36,7 +36,7 @@ public class ArrayTest {
 				
 				this.array[index] = value;	// 새로 추가하려는 값을 배열에 저장
 			}
-			this.size += 1;			// 기존 데이터 개수 + 새로운 데이터 개수
+			this.size += 1;			// 기존 데이터 개수 + 새로운 데이터 개수, 한칸이 늘어났으므로 더해준다
 		}
 		
 	}
@@ -64,7 +64,7 @@ public class ArrayTest {
 	}
 
 	public static void main(String[] args) {
-		ArrayTest test = new ArrayTest(3); //객체생성
+		ArrayTest test = new ArrayTest(3); //객체생성 , 변수 앞은 테스트의 자료형
 		test.add(0, 2);
 		for (int i = 0; i < test.getSize(); i++) {
 			System.out.print(test.get(i));
