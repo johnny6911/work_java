@@ -12,17 +12,15 @@ public class Test2 {
 		Character c= '1';
 		Boolean bo = true;
 		
-		byte bt = b;
-		short srt = s;
-		int itr = i;
-		long lo = l;
-		float fl = f;
-		double dou = d;
-		char cha = c;
-		boolean b1 = bo;
 		
-		
-		System.out.printf("%d, %d", b, s);
+		System.out.printf("%d%n", b);
+		System.out.printf("%d%n", s);
+		System.out.printf("%d%n", i);
+		System.out.printf("%d%n", l);
+		System.out.printf("%f%n", f);
+		System.out.printf("%f%n", d);
+		System.out.printf("%c%n", c);
+		System.out.printf("%b%n", bo);
 		
 		
 	} 

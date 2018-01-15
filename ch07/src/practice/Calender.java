@@ -18,11 +18,41 @@ public class Calender {
 		int countW = now.get(Calendar.WEEK_OF_MONTH);
 		int countD = now.get(Calendar.DAY_OF_YEAR);
 		int countYearWeek = now.get(Calendar.WEEK_OF_YEAR);
+		int dayofweek = now.get(Calendar.DAY_OF_WEEK);
+
+		System.out.println(now.getTime());
+	
+		System.out.print("오늘은 ");
+		System.out.print(now.get(Calendar.YEAR) + "년 ");
+		System.out.print(now.get(Calendar.MONTH) + 1 + "월 ");
+		System.out.print(now.get(Calendar.DATE) + "일 ");
+		System.out.print(Calender.getDayofweek(dayofweek));
+		System.out.println("입니다 ");
 		
-		System.out.println("이 달의 " + countM + "번째 " + a + "입니다");
-		System.out.println("이 달의 " + countW + "번째 주입니다");
-		System.out.println("이 해의 " + countD + "일입니다");
-		System.out.println("이 해의 " + countYearWeek + "번째 주입니다");
+		System.out.print("이 달의 ");
+		System.out.println(countM + "번째 " + Calender.getDayofweek(dayofweek));
+	
 		
+	
 	}
+	
+		public static String getDayofweek(int dayofweek) {			
+			switch(dayofweek) {
+		   		case Calendar.SUNDAY:
+		   			return "일요일";
+		   		case Calendar.MONDAY:
+		   			return "월요일";
+		   		case Calendar.TUESDAY:
+		   			return "화요일";
+		   		case Calendar.WEDNESDAY:
+		   			return "수요일";
+		   		case Calendar.THURSDAY:
+		   			return "목요일";
+		   		case Calendar.FRIDAY:
+		   			return "금요일";
+		   		case Calendar.SATURDAY:
+		   			return "토요일";
+			}
+			return null;
+		}
 }
