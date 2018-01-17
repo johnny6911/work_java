@@ -6,7 +6,7 @@ class BankAccount{
 	int balance = 0; // 은행잔고
 	
 	// 인출
-	public void withdraw(int money) {
+	public synchronized void withdraw(int money) {
 		// 현재 출금하려는 금액보다 잔고가 많은지 검사
 		if (money >= 0 && balance >= money) {
 			try {
@@ -25,10 +25,12 @@ class BankAccount{
 	
 	// 입금
 	public void deposit(int money) {
-		if(money > 0) {
-			balance += money;
-			System.out.printf("%s %d 입금하여 현재잔고 %d입니다 %n", 
+		synchronized (this) {
+			if(money > 0) {
+				balance += money;
+				System.out.printf("%s %d 입금하여 현재잔고 %d입니다 %n", 
 					Thread.currentThread().getName(), money, balance);
+			}
 		}
 	}
 }
