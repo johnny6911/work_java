@@ -1,7 +1,9 @@
 package com.koitt.java.exception02;
 
+import java.io.Serializable;
+
 // 모델 (Model), VO (Value Object), DTO (Data Transfer Object)
-public class Person {
+public class Person implements Serializable{
 
 	private String name;
 	private int age;

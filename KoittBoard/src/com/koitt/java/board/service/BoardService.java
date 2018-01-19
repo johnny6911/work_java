@@ -44,4 +44,5 @@ public class BoardService {
 	public boolean isExist(Board board) {
 		return dao.isExist(board);
 	}
+	
 }

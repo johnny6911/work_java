@@ -19,6 +19,7 @@ public class BoardController {
 	}
 	
 	public static void main(String[] args) {
+		
 		BoardController controller = new BoardController();
 		
 		Scanner input = new Scanner(System.in);
@@ -36,6 +37,7 @@ public class BoardController {
 			int menu = -1;	// try 안쪽에 있던 menu 변수를 바깥으로 뺐다.
 			try {
 				menu = Integer.parseInt(input.nextLine());
+
 			}
 			catch (NumberFormatException e) {
 				System.out.println("숫자만 입력하세요.");
@@ -102,7 +104,9 @@ public class BoardController {
 		catch (BoardException e) {
 			System.out.println(e.getMessage());
 		}
+		
 	}
+	
 	
 	// 3.
 	public void menuRead() {
@@ -187,5 +191,9 @@ public class BoardController {
 		catch (BoardException e) {
 			System.out.println(e.getMessage());
 		}
+		
+
+		
+		
 	}
 }
