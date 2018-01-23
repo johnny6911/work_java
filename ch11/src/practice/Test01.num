@@ -1,0 +1,34 @@
+1 package practice;
+2 
+3 import java.awt.image.BufferedImage;
+4 import java.io.BufferedReader;
+5 import java.io.BufferedWriter;
+6 import java.io.FileReader;
+7 import java.io.FileWriter;
+8 
+9 public class Test01 {
+10 	public static void main(String[] args) {
+11 		try {
+12 			// Connection Stream
+13 			FileReader fr = new FileReader("src/practice/Test01.java");
+14 			FileWriter fw = new FileWriter("src/practice/Test01.num");
+15 
+16 			// Chain Stream
+17 			BufferedReader br = new BufferedReader(fr);
+18 			BufferedWriter bw = new BufferedWriter(fw);
+19 
+20 			String data;
+21 			for (int i =1; (data = br.readLine()) !=null; i++) {
+22 				bw.write(i + " " + data + "\n");
+23 			}
+24 
+25 			br.close();
+26 			bw.close();
+27 			fr.close();
+28 			fw.close();
+29 
+30 		} catch(Exception e) {
+31 			System.out.println(e);
+32 		}
+33 	}
+34 }
