@@ -150,6 +150,8 @@ public class BoardController {
 		}
 		catch (BoardException e) {
 			System.out.println(e.getMessage());
+		} catch (SQLException e) {
+			e.printStackTrace();
 		}
 	}
 	
@@ -196,6 +198,8 @@ public class BoardController {
 		}
 		catch (BoardException e) {
 			System.out.println(e.getMessage());
+		} catch (SQLException e) {
+			e.printStackTrace();
 		}
 		
 

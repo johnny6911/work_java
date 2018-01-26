@@ -84,6 +84,31 @@ public class DBManager {
 		this.close();
 	}
 	
+	public void delete(Board board) throws SQLException {
+		conn = DriverManager.getConnection(URL + "/" + DB_NAME, ID, PASSWORD);
+		
+		StringBuilder sql = new StringBuilder();
+		sql.append("DELETE);
+		
+		pstmt = conn.prepareStatement(sql.toString());
+		
+		
+		this.close();
+		
+	}
+	
+	public void update(Board board) throws SQLException {
+		conn = DriverManager.getConnection(URL + "/" + DB_NAME, ID, PASSWORD);
+		
+		StringBuilder sql = new StringBuilder();
+		sql.append("INSERT INTO board (title, content, writer, regdate)");
+		pstmt = conn.prepareStatement(sql.toString());
+		
+		pstmt.executeUpdate();
+		
+		this.close();
+	}
+	
 	// 객체 연결 해제
 	private void close() throws SQLException {
 		if (rs != null) { rs.close(); }
