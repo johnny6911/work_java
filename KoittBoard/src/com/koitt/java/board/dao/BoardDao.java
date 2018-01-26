@@ -7,11 +7,13 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
 import com.koitt.java.board.exception.BoardException;
 import com.koitt.java.board.model.Board;
+import com.koitt.java.util.DBManager;
 
 public class BoardDao {
 
@@ -24,8 +26,8 @@ public class BoardDao {
 		this.list = loadFromFile(BoardDao.FILE_NAME); //게시글 전체목록을 가지고있음
 	}
 	
-	// 2.
-	public void insert(Board board) throws BoardException {
+										// 2.
+	public void insert(Board board) throws BoardException, SQLException {
 		for (Board item : this.list) {
 			if (item.equals(board)) {
 				// 1. 기존 등록된 같은 번호의 게시글이 존재할 경우
@@ -33,13 +35,14 @@ public class BoardDao {
 			}
 		}
 		list.add(board);
-		// TODO 3. saveToFile(list, 
-		this.saveToFile(this.list, BoardDao.FILE_NAME);
+		/*// TODO 3. saveToFile(list, [파일명]);
+		this.saveToFile(this.list, BoardDao.FILE_NAME);*/
+		DBManager.getInstance().insert(board);
 	}
 
 	// 1.
-	public List<Board> selectAll() {
-		return this.list;
+	public List<Board> selectAll() throws SQLException {
+		return DBManager.getInstance().selectAll(); //결과를 리스트로 바꿔서 그대로 쿼리문까지 전달하는것
 	}
 
 	// 1.							// 2.

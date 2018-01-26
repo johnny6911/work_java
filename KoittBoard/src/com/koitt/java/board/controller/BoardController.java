@@ -1,5 +1,6 @@
 package com.koitt.java.board.controller;
 
+import java.sql.SQLException;
 import java.util.List;
 import java.util.Scanner;
 
@@ -100,20 +101,25 @@ public class BoardController {
 			// 생성한 객체를 service로 전달한다.
 			this.service.add(board);
 			System.out.println("입력완료!");
-		}
-		catch (BoardException e) {
+		} catch (BoardException e) {
 			System.out.println(e.getMessage());
+		} catch (SQLException e) {
+			System.out.println("insert() SQL문 오류");
 		}
-		
 	}
 	
 	
 	// 3.
 	public void menuRead() {
 		System.out.println("=== 게시글 전체목록 출력 ===");
-		List<Board> list = this.service.read();
-		for (Board item : list) {
-			System.out.println(item);
+		List<Board> list;
+		try {
+			list = this.service.read();
+			for (Board item : list) {
+				System.out.println(item);
+			}
+		} catch (SQLException e) {
+			System.out.println("selectAll() SQL문 오류");
 		}
 	}
 	
